@@ -1,0 +1,6 @@
+coverage
+.vscode
+.cache
+/node_modules/
+/web_modules/
+/lib/**.js

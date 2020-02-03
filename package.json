@@ -1,0 +1,28 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npx snowpack",
+    "prettier:fix": "node node_modules/prettier/bin-prettier.js --write \"./**/*.{js,jsx,ts,tsx,json,html}\" .babelrc",
+    "build:wasm": "cd scripts && wasm_build",
+    "dev": "npx servor --reload",
+    "babel": "npx babel src --out-dir lib --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "prettier": "^1.19.1",
+    "snowpack": "^1.1.2"
+  },
+  "dependencies": {
+    "react": "npm:@reactesm/react@^0.1.0",
+    "react-dom": "npm:@reactesm/react-dom@^0.1.1"
+  }
+}
